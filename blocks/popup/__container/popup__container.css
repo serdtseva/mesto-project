@@ -1,0 +1,28 @@
+.popup__container {
+  background-color: white;
+  color: black;
+  max-width: 358px;
+  min-height: 259px;
+  margin: 195px auto auto;
+  padding-top: 34px;
+  padding-left: 36px;
+  padding-bottom: 37px;
+  padding-right: 36px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 10px;
+}
+@media all and (max-width: 600px) {
+  .popup__container {
+    padding-top: 25px;
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-bottom: 25px;
+    margin-top: 123px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 238px;
+    min-height: 272px;
+  }
+}

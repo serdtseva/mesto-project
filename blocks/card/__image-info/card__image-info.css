@@ -1,0 +1,11 @@
+.card__image-info {
+  display: flex;
+  padding-left: 21px;
+  padding-right: 15px;
+  max-width: 246px;
+  max-height: 79px;
+  align-content: center;
+  padding-top: 21px;
+  padding-bottom: 30px;
+  justify-content: space-between;
+}

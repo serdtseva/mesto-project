@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mesto Project</title>
+    <link rel="stylesheet" href="pages/index.css" />
+  </head>
+
+  <body class="page">
+    <!-- add class popup_active to make popup visible -->
+    <div class="popup">
+      <form class="popup__container">
+        <img src="images/close-icon.svg" class="popup__close" />
+        <h2 class="popup__title">Редактировать профиль</h2>
+        <fieldset class="popup__items">
+          <input type="text" class="popup__item" value="Жак-Ив Кусто" />
+          <input type="text" class="popup__item" value="Исследователь океана" />
+        </fieldset>
+        <input type="submit" class="popup__button" value="Сохранить" />
+      </form>
+    </div>
+    <header class="header page__header">
+      <img src="images/logo.svg" alt="лого сайта" class="header__logo" />
+    </header>
+
+    <main class="main page__main">
+      <div class="profile main__profile">
+        <div class="profile__left-column">
+          <img src="images/avatar.jpg" class="profile__pic" />
+          <div class="profile__bio">
+            <div class="profile__first-line">
+              <h1 class="profile__name">Жак-Ив Кусто</h1>
+              <button class="profile__change-button">
+                <img src="images/pen.svg" alt="кнопка редактирования профиля" />
+              </button>
+            </div>
+            <p class="profile__about">Исследователь океана</p>
+          </div>
+        </div>
+        <button class="profile__add-button">
+          <img class="profile__img" src="images/add.svg" alt="кнопка добавления новых фото" />
+        </button>
+      </div>
+      <div class="gallery main__gallery">
+        <div class="card gallery__card">
+          <img
+            class="card__image"
+            src="images/karach.jpg"
+            alt="старинное кирпичное здание"
+          />
+          <div class="card__image-info">
+            <h2 class="card__title">Карачаевск</h2>
+            <img class="card__heart" src="images/heart.svg" />
+          </div>
+        </div>
+        <div class="card gallery__card">
+          <img
+            class="card__image"
+            src="images/elbrus.jpg"
+            alt="эльбрус на заре в дали"
+          />
+          <div class="card__image-info">
+            <h2 class="card__title">Гора Эльбрус</h2>
+            <img class="card__heart" src="images/heart.svg" />
+          </div>
+        </div>
+        <div class="card gallery__card">
+          <img
+            class="card__image"
+            src="images/dombai.jpg"
+            alt="горный пейзаж"
+          />
+          <div class="card__image-info">
+            <h2 class="card__title">Домбай</h2>
+            <img class="card__heart" src="images/heart.svg" />
+          </div>
+        </div>
+        <div class="card gallery__card">
+          <img
+            class="card__image"
+            src="images/elbrus.jpg"
+            alt="эльбрус на заре в дали"
+          />
+          <div class="card__image-info">
+            <h2 class="card__title">Гора Эльбрус</h2>
+            <img
+              class="card__heart card__heart_active"
+              src="images/heart.svg"
+            />
+          </div>
+        </div>
+        <div class="card gallery__card">
+          <img
+            class="card__image"
+            src="images/dombai.jpg"
+            alt="горный пейзаж"
+          />
+          <div class="card__image-info">
+            <h2 class="card__title">Домбай</h2>
+            <img class="card__heart" src="images/heart.svg" />
+          </div>
+        </div>
+        <div class="card gallery__card">
+          <img
+            class="card__image"
+            src="images/karach.jpg"
+            alt="старинное кирпичное здание"
+          />
+          <div class="card__image-info">
+            <h2 class="card__title">Карачаево-Черкесия</h2>
+            <img class="card__heart" src="images/heart.svg" />
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer page__footer">
+      <p class="footer__copyright">© 2020 Mesto Russia</p>
+    </footer>
+  </body>
+</html>

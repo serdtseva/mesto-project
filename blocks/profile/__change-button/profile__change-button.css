@@ -1,0 +1,20 @@
+.profile__change-button {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  object-fit: cover;
+  object-position: center;
+}
+
+.profile__change-button:hover {
+    opacity: 0.6;
+}
+
+@media all and (max-width: 1000px) {
+  .profile__change-button {
+    width: 18px;
+    height: 18px;
+    object-position: center;
+    object-fit: cover;
+    padding: 0;
+  }
+}

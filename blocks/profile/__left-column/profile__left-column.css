@@ -1,0 +1,10 @@
+.profile__left-column {
+  display: flex;
+}
+
+@media all and (max-width: 1000px) {
+  .profile__left-column {
+    flex-direction: column;
+    align-items: center;
+  }
+}

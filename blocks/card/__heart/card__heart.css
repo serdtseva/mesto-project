@@ -1,0 +1,8 @@
+.card__heart {
+  object-fit: contain;
+  margin-right: 4px;
+}
+
+.card__heart:hover {
+  opacity: 0.5;
+}

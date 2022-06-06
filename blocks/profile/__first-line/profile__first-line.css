@@ -1,0 +1,13 @@
+.profile__first-line {
+  display: flex;
+  flex-direction: row;
+  gap: 18px;
+  justify-content: left;
+  align-items: center;
+}
+
+@media all and (max-width: 1000px) {
+  .profile__first-line {
+    gap: 10px;
+  }
+}

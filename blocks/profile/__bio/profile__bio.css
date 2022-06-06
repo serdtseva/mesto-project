@@ -1,0 +1,12 @@
+.profile__bio {
+  margin-left: 30px;
+  margin-top: 22px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media all and (max-width: 1000px) {
+  .profile__bio {
+    margin-top: 27px;
+  }
+}
