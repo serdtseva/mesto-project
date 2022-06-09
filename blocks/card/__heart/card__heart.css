@@ -1,6 +1,14 @@
 .card__heart {
   object-fit: contain;
-  margin-right: 4px;
+  background-color: transparent;
+  background-image: url(../../../images/heart.svg);
+  border: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 22px;
+  height: 19px;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .card__heart:hover {

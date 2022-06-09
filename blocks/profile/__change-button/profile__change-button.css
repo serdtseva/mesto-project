@@ -1,20 +1,23 @@
 .profile__change-button {
   background-color: transparent;
+  background-image: url(../../../images/pen.svg);
   border: 1px solid #ffffff;
-  object-fit: cover;
-  object-position: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 0;
 }
 
 .profile__change-button:hover {
-    opacity: 0.6;
+  opacity: 0.6;
 }
 
 @media all and (max-width: 1000px) {
   .profile__change-button {
     width: 18px;
     height: 18px;
-    object-position: center;
-    object-fit: cover;
-    padding: 0;
   }
 }

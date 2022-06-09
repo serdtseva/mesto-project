@@ -4,6 +4,10 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 336px;
 }
 
 @media all and (max-width: 890px) {
@@ -12,6 +16,6 @@
     line-height: 17px;
     padding-left: 15px;
     margin-top: 8px;
-    
+    max-width: 282px;
   }
 }

@@ -1,10 +1,11 @@
 .profile__left-column {
   display: flex;
+  align-items: center;
 }
 
 @media all and (max-width: 1000px) {
   .profile__left-column {
     flex-direction: column;
-    align-items: center;
+    text-align: center;
   }
 }
