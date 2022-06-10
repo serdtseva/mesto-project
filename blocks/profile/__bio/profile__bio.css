@@ -7,5 +7,6 @@
 @media all and (max-width: 1000px) {
   .profile__bio {
     margin-top: 27px;
+    margin-left: 27px;
   }
 }

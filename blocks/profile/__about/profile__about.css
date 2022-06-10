@@ -8,6 +8,7 @@
   white-space: nowrap;
   overflow: hidden;
   max-width: 336px;
+  padding-top: 8px;
 }
 
 @media all and (max-width: 890px) {
@@ -15,7 +16,7 @@
     font-size: 14px;
     line-height: 17px;
     padding-left: 15px;
-    margin-top: 8px;
-    max-width: 282px;
+    text-align: justify;
+    
   }
 }

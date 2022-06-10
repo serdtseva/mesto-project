@@ -1,10 +1,10 @@
 .card__image-info {
   display: flex;
-  padding-left: 21px;
-  padding-right: 15px;
   max-width: 246px;
-  align-content: center;
   padding-top: 21px;
   padding-bottom: 30px;
+  padding-left: 21px;
+  padding-right: 21px;
   justify-content: space-between;
+  align-items: center;
 }
