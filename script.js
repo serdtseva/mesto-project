@@ -40,6 +40,7 @@ function formSubmitHandler(evt) {
   let about = document.querySelector(".profile__about");
   name.textContent = nameInput.value;
   about.textContent = jobInput.value;
+  closePopup(".popup-change");
 }
 
 formElement.addEventListener("submit", formSubmitHandler);
@@ -76,6 +77,12 @@ function addCard(titleInput, linkInput) {
   cardContent.querySelector(".card__title").textContent = titleInput;
   cardContent.querySelector(".card__image").src = linkInput;
   gallery.append(cardContent);
+  // console.log(cardContent);
+  let img = cardContent.querySelector(".card__image");
+  img.addEventListener("click", (evt) => {
+    let desc = evt.target.parentNode.querySelector(".card__title");
+    popupPic(img.src, desc);
+  });
 }
 
 const cardTemplate = document.querySelector("#card-template").content;
@@ -89,9 +96,10 @@ const formElementAdd = document.querySelector(".popup__container_add");
 const titleInput = document.querySelector(".popup__item_title");
 const linkInput = document.querySelector(".popup__item_link");
 
-formElementAdd.addEventListener("submit", () => {
+formElementAdd.addEventListener("submit", (e) => {
   e.preventDefault();
   addCard(titleInput.value, linkInput.value);
+  closePopup(".popup-add");
 });
 
 const hearts = document.querySelectorAll(".card__heart");
@@ -120,18 +128,21 @@ function popupPic(imgToOpen, desc) {
   caption.textContent = desc.textContent;
   pic.classList.add("popup-pic_active");
   const clsPic = document.querySelector(".popup-pic__close");
+  // console.log(clsPic)
   clsPic.addEventListener("click", (evt) => {
     // console.log(evt.target.parentNode.parentNode);
-    // console.log(document.querySelector(".page").childNodes);
+    // console.log('close')
+    pic.classList.remove("popup-pic_active");
     document.querySelector(".page").removeChild(evt.target.parentNode.parentNode);
   });
 }
 //  document.querySelector(".card__title")
+/*
 const images = document.querySelectorAll(".card__image");
 images.forEach((img) => {
   img.addEventListener("click", (evt) => {
     let desc = evt.target.parentNode.querySelector(".card__title");
     popupPic(img.src, desc);
   });
-});
+});*/
 
