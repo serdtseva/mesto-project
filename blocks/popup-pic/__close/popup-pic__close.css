@@ -1,0 +1,21 @@
+.popup-pic__close {
+  background-image: url(../../../images/close-icon.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 32px;
+  height: 32px;
+  margin-left: auto;
+  margin-right: -40px;
+  margin-bottom: 8px;
+  background-size: contain;
+  cursor: pointer;
+}
+
+@media all and (max-width: 320px) {
+  .popup-pic__close {
+    width: 20px;
+    height: 20px;
+    margin-right: 0;
+    margin-bottom: 16px;
+  }
+}
