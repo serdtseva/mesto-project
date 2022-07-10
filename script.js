@@ -104,8 +104,8 @@ function createCard(titleInput, linkInput) {
   img.addEventListener("click", (evt) => {
     const popupPic = document.querySelector(".popup-pic");
     popupPic.classList.add("active");
-    popupPic.classList.remove("popup-pic");
-    popupPic.classList.add("popup-pic");
+   // popupPic.classList.remove("popup-pic");
+   // popupPic.classList.add("popup-pic");
     const imgToOpen = img.src;
     console.log(img.src);
     const desc = evt.target.parentNode.querySelector(".card__title");
