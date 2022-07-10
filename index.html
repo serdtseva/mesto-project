@@ -8,7 +8,7 @@
   </head>
 
   <body class="page">
-    <!-- add class popup_active to make popup visible -->
+    <!-- add class active to make popup visible -->
     <div class="popup popup-change">
       <form class="popup__container popup__container_change">
         <button
@@ -62,6 +62,13 @@
         </button>
       </form>
     </div>
+    <div class="popup-pic">
+      <div class="popup-pic__wrapper">
+        <div class="popup-pic__close"></div>
+        <img class="popup-pic__img" src="" alt="" />
+        <p class="popup-pic__desc"></p>
+      </div>
+    </div>
     <header class="header page__header">
       <img src="images/logo.svg" alt="лого сайта" class="header__logo" />
     </header>
@@ -95,15 +102,7 @@
         </div>
       </div>
     </template>
-    <template id="popup-pic-id">
-      <div class="popup-pic">
-        <div class="popup-pic__wrapper">
-          <div class="popup-pic__close"></div>
-          <img class="popup-pic__img" src="" alt="" />
-          <p class="popup-pic__desc"></p>
-        </div>
-      </div>
-    </template>
+
     <script src="script.js"></script>
   </body>
 </html>
