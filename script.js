@@ -43,9 +43,6 @@ const btnPopupCloseAdd = document.querySelector(".popup__close_add");
 const popupProfileName = document.querySelector(".popup__item_name");
 const popupProfileAbout = document.querySelector(".popup__item_about");
 
-const nameInput = document.querySelector(".popup__item_name");
-const jobInput = document.querySelector(".popup__item_about");
-
 const pic = document.querySelector(".popup-pic");
 const clsPic = document.querySelector(".popup-pic__close");
 
@@ -65,9 +62,8 @@ function closePopup(popup) {
 
 btnProfileChange.addEventListener("click", () => {
   openPopup(popupChange);
-  popupProfileName.value = document.querySelector(".profile__name").textContent;
-  popupProfileAbout.value =
-    document.querySelector(".profile__about").textContent;
+  popupProfileName.value = profileName.textContent;
+  popupProfileAbout.value = about.textContent;
 });
 
 btnProfileAddImg.addEventListener("click", () => {
@@ -84,8 +80,8 @@ btnPopupCloseAdd.addEventListener("click", () => {
 
 function submitProfileForm(evt) {
   evt.preventDefault();
-  profileName.textContent = nameInput.value;
-  about.textContent = jobInput.value;
+  profileName.textContent = popupProfileName.value;
+  about.textContent = popupProfileAbout.value;
   closePopup(popupChange);
 }
 
@@ -109,7 +105,6 @@ function createCard(titleInput, linkInput) {
   cardContent.querySelector(".card__title").textContent = titleInput;
   cardContent.querySelector(".card__image").src = linkInput;
   cardContent.querySelector(".card__image").alt = titleInput;
-  addCard(cardContent, gallery);
 
   const heart = cardContent.querySelector(".card__heart");
   heart.addEventListener("click", (evt) => {
@@ -119,11 +114,13 @@ function createCard(titleInput, linkInput) {
   del.addEventListener("click", (evt) => {
     gallery.removeChild(evt.target.parentNode);
   });
+
+  return cardContent;
 }
 
 formProfileElementAdd.addEventListener("submit", (e) => {
   e.preventDefault();
-  createCard(titleInput.value, linkInput.value);
+  addCard(createCard(titleInput.value, linkInput.value), gallery);
   titleInput.value = "";
   linkInput.value = "";
   closePopup(popupAdd);
@@ -134,5 +131,5 @@ clsPic.addEventListener("click", (evt) => {
 });
 
 for (let i = 0; i < initialCards.length; i++) {
-  createCard(initialCards[i].name, initialCards[i].link);
+  addCard(createCard(initialCards[i].name, initialCards[i].link), gallery);
 }
